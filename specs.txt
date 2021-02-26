@@ -1,15 +1,28 @@
 Plain English Specs
 
 (list?) hard-coded:
-A, E, I, O, U, L, N, R, S, T       1
-D, G                               2
-B, C, M, P                         3
-F, H, V, W, Y                      4
-K                                  5
-J, X                               8
-Q, Z                               10
+List<string, int> letterValues = new List<string, int>
+[A, E, I, O, U, L, N, R, S, T]       1
+[D, G]                               2
+[B, C, M, P]                         3
+[F, H, V, W, Y]                      4
+[K ]                                 5
+[J, X ]                              8
+[Q, Z  ]                             10
 
 1 word (string) user input
 break the word into substrings
 run thru letter list, grab associated value
 return added values
+
+public static Dictionary<string, int> letterValues = new Dictionary<string, int>() {
+  {"A, E, I, O, U, L, N, R, S, T", 1},
+  {"D, G", 2},
+  {"B, C, M, P", 3},
+  {"F, H, V, W, Y", 4},
+  {"K", 5},
+  {"J, X", 8},
+  {"Q, Z", 10}
+};
+
+Console.ReadLine()

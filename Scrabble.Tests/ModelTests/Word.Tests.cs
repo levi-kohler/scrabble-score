@@ -18,9 +18,18 @@ namespace Scrabble.Tests
     [TestMethod]
     public void WordConstructor_FindValueOfLetter_Word()
     {
-      int Score = Word.GetScore('A');
+      int Score = Word.GetScore('W');
 
-      Assert.AreEqual(1, Score);
+      Assert.AreEqual(4, Score);
+    }
+
+        [TestMethod]
+    public void WordConstructor_BreakdownWordIntoArrayOfLetters_Word()
+    {
+      Word newWord = new Word("word");
+      char[] result = newWord.LoopWord("test");
+
+      Assert.AreEqual(('t'), result[0]);
     }
   }
 }
